@@ -56,7 +56,7 @@ p {
 .pa {
     margin-top: 2vh;
     width: 40vw;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 #fruit,#Vegetables,#Fastfood{
@@ -81,7 +81,7 @@ footer {
     background-color: rgb(100, 96, 131);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width:400px) and (max-width: 600px) {
 
     * {
         margin: 0px;
@@ -94,9 +94,8 @@ footer {
         margin: 0px;
         background: url("d.jpg");
         width: auto;
-        height: 70vh;
+        height: 80vh;
         background-repeat: no-repeat;
-        font-size: large;
         border: 2px solid black;
         object-fit: fill;
         font-weight: bolder;
@@ -110,8 +109,8 @@ footer {
 
     .pa {
         margin-top: 2vh;
-        width: 80vw;
-        font-size: 1.5rem;
+        width: 100vw;
+        font-size: 0.1em;
     }
 
 
@@ -151,8 +150,147 @@ footer {
     .list{
         margin-top: 2vh;
     }
-    
+}
+
+@media screen and (max-width:399px){
+    * {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
+
+    header {
+        clear: both;
+        margin: 0px;
+        background: url("d.jpg");
+        width: auto;
+        height: 70vh;
+        background-repeat: no-repeat;
+        font-size: large;
+        border: 2px solid black;
+        object-fit: fill;
+        font-weight: bolder;
+        margin-bottom: 10vh;
+    }
+
+    p {
+        color: blue;
+        text-align: left;
+        font-size: large;
+    }
+
+    .pa {
+        margin-top: 2vh;
+        width: 80vw;
+        font-size: 1.5em;
+    }
 
 
+    h1 {
+        color: navy;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
 
+    #circle {
+        margin: auto;
+        height: 90px;
+        width: 90px;
+        border-radius: 500px;
+    }
+
+    footer {
+        margin-top: 10vh;
+        background-color: rgb(100, 96, 131);
+    }
+
+
+    .navbar {
+        border: 1px solid white;
+        display: inline-block;
+        margin: 5px 10px;
+        border-radius: 10px;
+    }
+
+    #fruit,#Vegetables,#Fastfood{
+        height: 20vh;
+        width: 30vw;
+        border-radius: 20px;
+        margin: 2vw;
+    }
+
+    .list{
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1000px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
+
+    header {
+        clear: both;
+        margin: 0px;
+        background: url("d.jpg");
+        width: auto;
+        height: 60vh;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        object-fit: fill;
+        font-weight: bolder;
+        margin-bottom: 8vh;
+    }
+
+    p {
+        color: blue;
+        text-align: left;
+    }
+
+    .pa {
+        margin-top: 2vh;
+        width: 100vw;
+        font-size: 1.5em;
+    }
+
+
+    h1 {
+        color: navy;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    #circle {
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 500px;
+    }
+
+    footer {
+        margin-top: 10vh;
+        background-color: rgb(100, 96, 131);
+    }
+
+
+    .navbar {
+        border: 1px solid white;
+        display: inline-block;
+        margin: 5px 10px;
+        border-radius: 10px;
+    }
+
+    #fruit,#Vegetables,#Fastfood{
+        height: 20vh;
+        width: 30vw;
+        border-radius: 20px;
+        margin: 2vw;
+    }
+
+    .list{
+        margin-top: 2vh;
+    }
 }
