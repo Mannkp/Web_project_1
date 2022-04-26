@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie = edge">
+    <meta name="description" content="Contact Mann Pandya">
+    <meta name="keywords" content="html,mann,mann's html,contact, contact me">
+    <title>Contact Mann</title>
+    <style>
+        .hh {
+            margin: auto;
+            border: 3px solid black;
+            background-color: azure;
+            border-radius: 10px;
+            padding: 1%;
+            width: max-content;
+        }
+
+
+        .submit1 {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            /* text-align: center; */
+            text-decoration: double;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+
+
+        footer {
+            background-color: silver;
+            color: red;
+            font-size: large;
+            text-align: end;
+        }
+
+        .d {
+            background-color: burlywood;
+            width: max-content;
+            padding: 2%;
+            border: 3px solid red;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body style="background-image:url(https://www.urdd.cymru/files/1214/0844/8205/myarea-bg.jpg); background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;">
+    <div class="hh">
+        <h2>Fill this form to contact Mann</h2>
+        <form action="backend.php">
+            <br>
+            <div class="d">
+                <label for="Names">Name: </label>
+                <input type="text" name="MyName" id="Names">
+            </div>
+            <br>
+            <div class="d">
+                Date of Birth : <input type="date" name="Mydateobirth">
+            </div>
+            <br>
+            <div class="d">
+                Phone Number : <input type="number" name="MyPhone">
+            </div>
+            <br>
+            <div class="d">
+                Address : <textarea name="MyAddress" rows="4" cols="30"></textarea>
+            </div>
+            <br>
+            <div class="d">
+                <label for="state">Select State :</label>
+                <select name="MyStates" id="state">
+                    <option value="sel" selected>select</option>
+                    <option value="Guj">GUJARAT</option>
+                    <option value="Mh">Maharashtra</option>
+                    <option value="up">UP</option>
+                    <option value="mp">MP</option>
+                </select>
+            </div>
+            <br>
+            <div class="d">
+                Email : <input type="email" name="MyEmail">
+            </div>
+            <br>
+            <div class="d">
+                email type: Personal <input type="checkbox" name="Mycheckbox"> Professional <input type="checkbox"
+                    name="Mycheckbox">
+            </div>
+            <br>
+            <div class="d">
+                Gender : Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender"> Others
+                <input type="radio" name="MyGender">
+            </div>
+            <br>
+            <div class="d">
+                Suggestions (if any): <input type="text" name="MySuggestions">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now" class="submit1">
+                <input type="reset" value="Reset Form" class="submit1">
+            </div>
+
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>Page Made By ~ Mannkumar K. Pandya</footer>
+</body>
+
+</html>
