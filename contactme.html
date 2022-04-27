@@ -7,17 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie = edge">
     <meta name="description" content="Contact Mann Pandya">
     <meta name="keywords" content="html,mann,mann's html,contact, contact me">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Contact Mann</title>
+
     <style>
-        .hh {
-            margin: auto;
-            border: 3px solid black;
-            background-color: azure;
-            border-radius: 10px;
-            padding: 1%;
-            width: max-content;
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
         }
 
+        body {
+            background-color: rgb(0, 0, 69);
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .contact_box {
+            margin: auto;
+            margin-top: 110px;
+            border: 3px solid black;
+            background-color: rgb(249, 156, 56);
+            border-radius: 10px;
+            padding: 10px;
+            width: 80vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 10px;
+            font-size: 24px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* padding: -100; */
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.815);
+            backdrop-filter: blur(0px);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(215, 130, 238);
+            text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
 
         .submit1 {
             background-color: #4CAF50;
@@ -32,14 +88,6 @@
             border-radius: 20px;
         }
 
-
-        footer {
-            background-color: silver;
-            color: red;
-            font-size: large;
-            text-align: end;
-        }
-
         .d {
             background-color: burlywood;
             width: max-content;
@@ -48,75 +96,196 @@
             border-radius: 20px;
             box-sizing: border-box;
         }
+
+        footer {
+            background-color: silver;
+            color: red;
+        }
+
+        @media screen and (max-width:900px) {
+            * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(0, 0, 69);
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .contact_box {
+            margin: 1vw;
+            margin-top: 110px;
+            /* border: 3px solid black; */
+            background-color: rgb(249, 156, 56);
+            border-radius: 10px;
+            padding: 10px;
+            width: auto;
+            font-size: small;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 5px;
+            font-size: 14px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* padding: -100; */
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.815);
+            backdrop-filter: blur(0px);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(215, 130, 238);
+            text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        .submit1 {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            /* text-align: center; */
+            text-decoration: double;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+/* 
+        .d {
+            background-color: burlywood;
+            width: max-content;
+            padding: 2%;
+            border: 3px solid red;
+            border-radius: 20px;
+            box-sizing: border-box;
+        } */
+
+        footer {
+            background-color: silver;
+            color: red;
+           height: auto;
+            width: 100%;
+        }
+
+        header{
+            width: auto;
+            height: auto;
+        }
+
+        form{
+            color: black;
+        }
+
+        }
     </style>
 </head>
 
-<body style="background-image:url(https://www.urdd.cymru/files/1214/0844/8205/myarea-bg.jpg); background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: padding-box;">
-    <div class="hh">
-        <h2>Fill this form to contact Mann</h2>
-        <form action="backend.php">
-            <br>
-            <div class="d">
-                <label for="Names">Name: </label>
-                <input type="text" name="MyName" id="Names">
-            </div>
-            <br>
-            <div class="d">
-                Date of Birth : <input type="date" name="Mydateobirth">
-            </div>
-            <br>
-            <div class="d">
-                Phone Number : <input type="number" name="MyPhone">
-            </div>
-            <br>
-            <div class="d">
-                Address : <textarea name="MyAddress" rows="4" cols="30"></textarea>
-            </div>
-            <br>
-            <div class="d">
-                <label for="state">Select State :</label>
-                <select name="MyStates" id="state">
-                    <option value="sel" selected>select</option>
-                    <option value="Guj">GUJARAT</option>
-                    <option value="Mh">Maharashtra</option>
-                    <option value="up">UP</option>
-                    <option value="mp">MP</option>
-                </select>
-            </div>
-            <br>
-            <div class="d">
-                Email : <input type="email" name="MyEmail">
-            </div>
-            <br>
-            <div class="d">
-                email type: Personal <input type="checkbox" name="Mycheckbox"> Professional <input type="checkbox"
-                    name="Mycheckbox">
-            </div>
-            <br>
-            <div class="d">
-                Gender : Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender"> Others
-                <input type="radio" name="MyGender">
-            </div>
-            <br>
-            <div class="d">
-                Suggestions (if any): <input type="text" name="MySuggestions">
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Submit Now" class="submit1">
-                <input type="reset" value="Reset Form" class="submit1">
-            </div>
+<body>
+    <nav>
+        Mann
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li>About me</li>
+            <li>Other Info</li>
+            <li>Suggestions</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="contact_box">
+            <h2>Fill this form to contact Mann</h2>
+            <form action="backend.php">
+                <br>
+                <div class="d">
+                    <label for="Names">Name: </label>
+                    <input type="text" name="MyName" id="Names">
+                </div>
+                <br>
+                <div class="d">
+                    Date of Birth : <input type="date" name="Mydateobirth">
+                </div>
+                <br>
+                <div class="d">
+                    Phone Number : <input type="number" name="MyPhone">
+                </div>
+                <br>
+                <div class="d">
+                    Address : <textarea name="MyAddress" rows="4" cols="30"></textarea>
+                </div>
+                <br>
+                <div class="d">
+                    <label for="state">Select State :</label>
+                    <select name="MyStates" id="state">
+                        <option value="sel" selected>select</option>
+                        <option value="Guj">GUJARAT</option>
+                        <option value="Mh">Maharashtra</option>
+                        <option value="up">UP</option>
+                        <option value="mp">MP</option>
+                    </select>
+                </div>
+                <br>
+                <div class="d">
+                    Email : <input type="email" name="MyEmail">
+                </div>
+                <br>
+                <div class="d">
+                    email type: Personal <input type="checkbox" name="Mycheckbox"> Professional <input type="checkbox"
+                        name="Mycheckbox">
+                </div>
+                <br>
+                <div class="d">
+                    Gender : Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender">
+                    Others
+                    <input type="radio" name="MyGender">
+                </div>
+                <br>
+                <div class="d">
+                    Suggestions (if any): <input type="text" name="MySuggestions">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Submit Now" class="submit1">
+                    <input type="reset" value="Reset Form" class="submit1">
+                </div>
 
-        </form>
-    </div>
+            </form>
+        </div>
 
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+    </header>
 
-    <footer>Page Made By ~ Mannkumar K. Pandya</footer>
+    <span><footer>Page Made By ~ Mannkumar K. Pandya</footer></span>
 </body>
 
 </html>
