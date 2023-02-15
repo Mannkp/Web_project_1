@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
+}
+
+body {
+    background-color: rgb(0, 0, 69);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact_box {
+    margin: auto;
+    margin-top: 110px;
+    border: 3px solid black;
+    background-color: rgb(249, 156, 56);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* padding: -100; */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.815);
+    backdrop-filter: blur(0px);
+    color:white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(215, 130, 238);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+.submit1 {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    /* text-align: center; */
+    text-decoration: double;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.d {
+    background-color: burlywood;
+    width: max-content;
+    padding: 2%;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: silver;
+    color: red;
+}
+
+form input{
+    color: black;
+}
+
+@media screen and (max-width:900px) {
+    * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 69);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact_box {
+    margin: 1vw;
+    margin-top: 110px;
+    /* border: 3px solid black; */
+    background-color: rgb(249, 156, 56);
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    font-size: small;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* padding: -100; */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.815);
+    backdrop-filter: blur(0px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(215, 130, 238);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+.submit1 {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    /* text-align: center; */
+    text-decoration: double;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px;
+}
+/* 
+.d {
+    background-color: burlywood;
+    width: max-content;
+    padding: 2%;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-sizing: border-box;
+} */
+
+footer {
+    background-color: silver;
+    color: red;
+   height: auto;
+    width: 100%;
+}
+
+header{
+    width: auto;
+    height: auto;
+}
+
+form input{
+    color: black;
+}
+
+}
