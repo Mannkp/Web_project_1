@@ -31,50 +31,67 @@
             <form action="backend.php">
                 <br>
                 <div class="d">
-                    <label for="Names">Name: </label>
-                    <input type="text" name="MyName" id="Names">
+                    <label for="Names">Name: </label>   
+                    <input type="text" name="MyName" id="Names" required>
                 </div>
                 <br>
                 <div class="d">
-                    Date of Birth : <input type="date" name="Mydateobirth">
+                    <label for="DoB">Date of Birth : </label>
+                    <input type="date" name="Mydateobirth" id="DoB" required>
                 </div>
                 <br>
                 <div class="d">
-                    Phone Number : <input type="number" name="MyPhone">
+                    <label for="ph_no">Phone Number : </label>
+                    <input type="number" minlength="10" maxlength="10" name="MyPhone" id="ph_no" required>
                 </div>
                 <br>
                 <div class="d">
-                    Address : <textarea name="MyAddress" rows="4" cols="30"></textarea>
+                    <label for="address">Address : </label>
+                    <textarea name="MyAddress" rows="4" cols="30"></textarea>
                 </div>
                 <br>
                 <div class="d">
                     <label for="state">Select State :</label>
                     <select name="MyStates" id="state">
-                        <option value="sel" selected>select</option>
+                        <option value=" " selected>--select a State--</option>
                         <option value="Guj">GUJARAT</option>
                         <option value="Mh">Maharashtra</option>
                         <option value="up">UP</option>
+                        <option value="mp">Rajasthan</option>
                         <option value="mp">MP</option>
+                        <option value="mp">Assam</option>
+                        <option value="mp">Kerela</option>
+                        <option value="mp">Hyderabad</option>
+                        <option value="mp">Telengana</option>
                     </select>
                 </div>
                 <br>
                 <div class="d">
-                    Email : <input type="email" name="MyEmail">
+                    <label for="email">Email : </label>
+                    <input type="email" name="MyEmail" id="email">
                 </div>
                 <br>
                 <div class="d">
-                    email type: Personal <input type="checkbox" name="Mycheckbox"> Professional <input type="checkbox"
-                        name="Mycheckbox">
+                    <p>Select Email type:</p>
+                    <label for="email">Personal:</label>
+                    <input type="checkbox" name="Mycheckbox" value="personal" checked>
+                    <label for="email">Professional:</label>
+                    <input type="checkbox" name="Mycheckbox" value="Professional">
                 </div>
                 <br>
                 <div class="d">
-                    Gender : Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender">
-                    Others
-                    <input type="radio" name="MyGender">
+                    <p>Select Gender:</p>
+                    <label for="Gender">Male: </label>
+                    <input type="radio" name="MyGender" id="Gender" value="male">
+                    <label for="Gender2">Female: </label>
+                    <input type="radio" name="MyGender" id="Gender2" value="female">
+                    <label for="Gender3">Prefer Not to Specify: </label>
+                    <input type="radio" name="MyGender" id="Gender3" value="none!">
                 </div>
                 <br>
                 <div class="d">
-                    Suggestions (if any): <input type="text" name="MySuggestions">
+                    <label for="sug">Suggestions (if any): </label>
+                    <input type="text" name="Suggestions" id="sug">
                 </div>
                 <br>
                 <div>
